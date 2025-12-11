@@ -15,12 +15,8 @@ function App() {
     <>
       
         <SprayCursor />
-
         <ScrollRumanSaiyed />
-       
-
         <ProjectCards />
-
         <Experiencecards />
          <InfoSection/>
         <ResumeSection/>
