@@ -1,0 +1,61 @@
+.ecards-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* Full-width card */
+.ecard {
+  width: 95%; /* fill page but leave slight margin */
+  max-width: 1400px; /* optional for big screens */
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+
+  border: 2px solid transparent;
+  background-clip: padding-box, border-box;
+  background-image:
+    linear-gradient(white, white),
+    linear-gradient(90deg, #0ab4ff, #4d9bff, #0077ff);
+
+  display: flex;
+  flex-direction: row;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ecard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 140, 255, 0.25);
+}
+
+/* LEFT side image */
+.ecard-img {
+  width: 40%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* RIGHT side content */
+.ecard-content {
+  width: 60%;
+  padding: 20px;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ecard-title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.ecard-desc {
+  font-size: 1rem;
+  opacity: 0.85;
+}

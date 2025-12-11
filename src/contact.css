@@ -1,0 +1,114 @@
+/* === CONTACT SECTION WRAPPER === */
+
+
+.contact-section {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* TOP BLUR + DARK GRADIENT OVERLAY */
+.contact-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+    background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,1) 0%,     /* TOP = WHITE */
+    rgba(255,255,255,0.7) 18%,  /* fade into image */
+    rgba(255,255,255,0.3) 35%,  /* mid transition */
+    rgba(255,255,255,0.0) 55%,  /* full image */
+    rgba(0,0,0,0.3) 80%,        /* slight dark lower */
+    rgba(0,0,0,0.55) 100%       /* darkest bottom */
+  );
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* CONTENT CONTAINER (CENTERED) */
+.contact-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+/* SLEEK, THIN CONTACT TITLE */
+.contact-title {
+
+  font-weight: 300;
+  font-size: clamp(2rem, 8vw, 4.5rem);
+  letter-spacing: 0.25em;
+  color: #000000;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+/* LINKS LAYOUT */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+/* BUTTON STYLE */
+.contact-btn {
+  padding: 12px 36px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Orbitron", system-ui, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+}
+
+/* HOVER EFFECT */
+.contact-btn:hover {
+  background: #ffffff;
+  color: #000000;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* SMALL SCREEN TWEAKS */
+@media (max-width: 600px) {
+  .contact-title {
+    letter-spacing: 0.18em;
+  }
+
+  .contact-btn {
+    min-width: 190px;
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+  }
+}
+.rightsreserved1 {
+  position: relative;   /* REQUIRED */
+  z-index: 3;           /* ABOVE blur/white overlay */
+  margin-top: 28px;
+  display: block;
+
+  color: #ffffff !important;
+  font-family: "Orbitron", system-ui, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+

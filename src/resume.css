@@ -1,0 +1,81 @@
+/* Full page height section after Experience */
+.resume-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Center area that holds the button and car orbit */
+.resume-center {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Resume button in the middle */
+.resume-button {
+  border-radius: 999px;
+  padding: 16px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 2px solid #000;
+  background: #000000;
+  color: aliceblue;
+  cursor: pointer;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  z-index: 2;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* Car orbit container */
+.car-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  pointer-events: none;
+  opacity: 0;
+}
+
+/* Only animate when this class is active */
+.car-orbit--active {
+  animation: carOrbit 4s ease-in-out infinite;
+}
+
+/* The car image */
+.car-img {
+  width: 80px;
+  transform: translateX(160px); /* start to the right of center */
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.4));
+}
+
+/* Keyframes:
+   - start off-screen right
+   - come in towards the button
+   - circle around the center
+*/
+@keyframes carOrbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity:1;
+  }
+  15% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1; /* car fully visible */
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    opacity: 1;
+  }
+}
