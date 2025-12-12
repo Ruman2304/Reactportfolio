@@ -5,24 +5,20 @@ import "./experience.css";
 const experience = [
   {
     id: 1,
-    title: "Phycom Corporation : Software Development Intern Jan 2025 - Jun 2025",
+    title: "Phycom Corporation : Software Development Intern - Jan 2025 - Jun 2025",
     desc: "- Migrated backend services from Java to Go (Golang) to enhance performance and scalability - Built a backend server in Go to process and manage real-time weather data from IoT devices - Integrated Google Cloud Datastore (NoSQL) for efficient weather data storage and retrieval - Developed data synchronization between the Go server and an Elixir server - Used Pub/Sub messaging for real-time updates, ensuring seamless data flow - Ensured a smooth server migration with minimal downtime and data integrity - Collaborated in daily scrums, contributing to agile development practices",
   },
   {
     id: 2,
-    title: "Project 2",
+    title: "ACM CSUF Game Dev Officer. August 2025 - present",
     desc: "Description of project 2",
   },
   {
     id: 3,
-    title: "Project 3",
-    desc: "Description of project 3",
+    title: "IBM Skillbuild DataScience Intern. - September 2024 - Novermber 2024",
+    desc: "• Designed and developed a house price prediction model achieving 84% accuracy using Python, Flask, and Scikit-Learn; conducted exploratory data analysis to guide feature engineering. • Executed comprehensive data cleaning, visualization, and machine learning optimization for large datasets, applying principles of experimental design to validate model performance.",
   },
-  {
-    id: 4,
-    title: "Project 4",
-    desc: "Description of project 4",
-  },
+
 ];
 
 function Experiencecards() {
