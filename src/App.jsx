@@ -18,7 +18,7 @@ function App() {
         <ScrollRumanSaiyed />
         <ProjectCards />
         <Experiencecards />
-         <InfoSection/>
+        <InfoSection/>
         <ResumeSection/>
         <ContactPage/>
        

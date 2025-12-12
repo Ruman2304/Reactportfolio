@@ -5,8 +5,8 @@ import "./experience.css";
 const experience = [
   {
     id: 1,
-    title: "Project 1",
-    desc: "Description of project 1",
+    title: "Phycom Corporation : Software Development Intern Jan 2025 - Jun 2025",
+    desc: "- Migrated backend services from Java to Go (Golang) to enhance performance and scalability - Built a backend server in Go to process and manage real-time weather data from IoT devices - Integrated Google Cloud Datastore (NoSQL) for efficient weather data storage and retrieval - Developed data synchronization between the Go server and an Elixir server - Used Pub/Sub messaging for real-time updates, ensuring seamless data flow - Ensured a smooth server migration with minimal downtime and data integrity - Collaborated in daily scrums, contributing to agile development practices",
   },
   {
     id: 2,
