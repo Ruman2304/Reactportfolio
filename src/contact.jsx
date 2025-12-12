@@ -12,7 +12,7 @@ export default function ContactPage() {
 
         <div className="contact-links">
 
-          <a href="#projects" className="contact-btn">Projects</a>
+        
 
           <a href="https://github.com/Ruman2304" 
              target="_blank" 

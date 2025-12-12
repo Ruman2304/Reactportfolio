@@ -7,6 +7,8 @@ import SprayCursor from "./spraycursor.jsx";
 import ResumeSection from "./resume.jsx";
 import InfoSection from "./infosection.jsx";
 import ContactPage from "./contact.jsx";
+import Education from "./edu.jsx";
+
 
 function App() {
   
@@ -18,6 +20,7 @@ function App() {
         <ScrollRumanSaiyed />
         <ProjectCards />
         <Experiencecards />
+        <Education/>
         <InfoSection/>
         <ResumeSection/>
         <ContactPage/>

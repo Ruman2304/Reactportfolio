@@ -34,9 +34,21 @@ font-family: 'Courier New', Courier, monospace;
 
 /* LEFT side image */
 .ecard-img {
-  width: 40%;
-  height: 250px;
+  width: 20%;
+  height: 100%;
   object-fit: cover;
+}
+.ecard-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.ecard-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 10px;
+  line-height: 1.4;
 }
 
 /* RIGHT side content */
