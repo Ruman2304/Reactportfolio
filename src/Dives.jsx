@@ -1,19 +1,22 @@
 // Dives.jsx
 import React from "react";
 import "./cards.css";
-
+import lacross from "./assets/images.jpg";
+import houe from "./assets/housde.png"
 const projects = [
   {
     id: 1,
-    title: "Project 1",
-    desc: "Description of project 1",
-    img: "/images/p1.jpg",
+    title: "La cross Appengine",
+    desc: "Migrated backend services from Java to Go (Golang) to enhance performance and scalability Built a backend server in Go to process and manage real-time weather data from IoT devices. Integrated Google Cloud Datastore (NoSQL) for efficient weather data storage and retrieval. Developed data synchronization between the Go server and an Elixir server. Used Pub/Sub messaging for real-time updates, ensuring seamless data flow. Ensured a smooth server migration with minimal downtime and data integrity. Collaborated in daily scrums, contributing to agile development practices",
+    img:lacross,
+    href: "https://www.lacrossetechnology.com/"
   },
   {
     id: 2,
-    title: "Project 2",
-    desc: "Description of project 2",
-    img: "/images/p2.jpg",
+    title: "House Price Predictor",
+    desc: "Introducing the House Price Predictor, a user-friendly tool created with Flask framework and a Linear Regression model. Using a dataset from Kaggle of Bengalore house prices, it achieves over 84% accuracy in estimating home values. This tool helps real estate professionals and homebuyers make informed decisions with reliable predictions based on past data. Made under in IBM skillbuild 6 week internship of data analytics.",
+    img: houe,
+    href:"https://www.linkedin.com/posts/ruman-saiyed-4b4646299_introducing-the-house-price-predictor-a-activity-7222435435917000705-_lmS/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgtB0gBggRPMWF9Fs_4MecM_tZqSX_6uxc"
   },
   {
     id: 3,
@@ -54,6 +57,15 @@ function ProjectCards() {
           <div className="card-content">
             <h3 className="card-title">{p.title}</h3>
             <p className="card-desc">{p.desc}</p>
+             {/* LINK */}
+              <a
+                href={p.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card-link"
+              >
+                Visit Website →
+              </a>
           </div>
         </div>
       ))}

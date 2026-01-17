@@ -13,7 +13,7 @@ const experience = [
       "California State University, Fullerton\n" +
       "Aug 2025 – May 2027",
     image: csuf,
-    desc: "- GPA – 3.7\n",
+    desc: "- GPA – 3.5\n",
   },
   {
     id: 2,

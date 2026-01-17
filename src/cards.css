@@ -1,12 +1,13 @@
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 25px;
   padding: 40px;
 }
 
 .card {
   background: white;
+  font-family: 'Courier New', Courier, monospace;
   border-radius: 14px;
   padding: 0;
   overflow: hidden;
@@ -49,4 +50,15 @@
 .card-desc {
   font-size: 0.9rem;
   opacity: 0.8;
+}
+.card-link {
+  margin-top: 12px;
+  display: inline-block;
+  color: #0077ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
 }
