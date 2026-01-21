@@ -4,14 +4,24 @@ import "./experience.css";
 import carImg from "./assets/phycom.jpeg";
 import acm from"./assets/acm.svg";
 import ibm from"./assets/blob.png";
+import csuf from "./assets/csuf.webp";
+
 import { materialAttenuationDistance } from "three/src/nodes/TSL.js";
 
 const experience = [
-  {
+    {
     id: 1,
+    image:csuf,
+    title: "Student Assistant Cal State Fullerton, Information Systems and Decision Science\n"+
+    "- January 2026 – Present",
+    desc:  "- Assisted students with academic and departmental inquiries, providing clear guidance on courses, procedures, and resources to ensure a positive and supportive experience.\n" +
+"- Managed departmental communications by monitoring emails, coordinating information flow, and supporting faculty and staff with administrative and operational tasks.\n"+
+"- Supported department outreach initiatives by staffing information tables, engaging with students, promoting departmental activities, and assisting professors and staff during events and daily operations.",
+  },{
+    id: 2,
     title:
       "Phycom Corporation : Software Development Intern \n"+
-      "- Jan 2025 – Jun 2025",
+      "\n - Jan 2025 – Jun 2025",
     image: carImg,
     desc:
       "- Migrated backend services from Java to Go (Golang) to enhance performance and scalability\n" +
@@ -23,7 +33,7 @@ const experience = [
       "- Collaborated in daily scrums, contributing to agile development practices",
   },
   {
-    id: 2,
+    id: 3,
     image:acm,
     title: "ACM CSUF Game Dev Officer\n"+
     "- August 2025 – Present",
@@ -32,7 +42,7 @@ const experience = [
     "- Planning, organizing, and leading weekly game creation sessions.",
   },
   {
-    id: 3,
+    id: 4,
     image:ibm,
     title: "IBM Skillbuild Data Science Intern\n"+
     "- Sep 2024 – Nov 2024",

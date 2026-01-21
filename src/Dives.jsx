@@ -3,6 +3,8 @@ import React from "react";
 import "./cards.css";
 import lacross from "./assets/images.jpg";
 import houe from "./assets/housde.png"
+import anim from "./assets/ani.png"
+import job from "./assets/jobportal.png"
 const projects = [
   {
     id: 1,
@@ -20,22 +22,19 @@ const projects = [
   },
   {
     id: 3,
-    title: "Project 3",
-    desc: "Description of project 3",
-    img: "/images/p3.jpg",
+    title: "Job Portal",
+    desc: "Introducing our latest innovation: a comprehensive job portal designed to revolutionize the way professionals connect with career opportunities. Powered by cutting-edge technologies including PHP, HTML, CSS, JavaScript, and AJAX, our platform offers a seamless user experience from start to finish. But we didn’t stop there. Behind the scenes, our backend environment, powered by PHPMyAdmin, ensures smooth operations and easy management of user data. This robust infrastructure enables us to deliver a reliable and secure platform for all users.",
+    img: job,
+    href: "https://www.linkedin.com/posts/ruman-saiyed-4b4646299_excited-to-announce-the-successful-completion-activity-7193122138315243522--A9f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgtB0gBggRPMWF9Fs_4MecM_tZqSX_6uxc"
   },
   {
     id: 4,
-    title: "Project 4",
-    desc: "Description of project 4",
-    img: "/images/p4.jpg",
+    title: "Animation Portfolio",
+    desc: "MY ART STATION GALLERY YOU CAN SEE MY GAME PROJECTS AND BLENDER WORK HERE",
+    img: anim,
+    href:"https://www.artstation.com/rushan23"
   },
-  {
-    id: 5,
-    title: "Project 5",
-    desc: "Description of project 5",
-    img: "/images/p5.jpg",
-  },
+
 ];
 
 function ProjectCards() {
@@ -64,7 +63,7 @@ function ProjectCards() {
                 rel="noopener noreferrer"
                 className="card-link"
               >
-                Visit Website →
+                Visit Demo →
               </a>
           </div>
         </div>
