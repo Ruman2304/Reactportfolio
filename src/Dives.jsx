@@ -5,6 +5,8 @@ import lacross from "./assets/images.jpg";
 import houe from "./assets/housde.png"
 import anim from "./assets/ani.png"
 import job from "./assets/jobportal.png"
+import mine from "./assets/mine.webp"
+
 const projects = [
   {
     id: 1,
@@ -33,6 +35,17 @@ const projects = [
     desc: "MY ART STATION GALLERY YOU CAN SEE MY GAME PROJECTS AND BLENDER WORK HERE",
     img: anim,
     href:"https://www.artstation.com/rushan23"
+  },
+  {
+    id: 4,
+    title: "Minecraft Speedrun Plugin",
+    desc: "Built a full-stack expert system using SWI-Prolog and Python (Flask) to model and reason over Minecraft gameplay objectives.\n"+
+
+"Designed a rule-based knowledge base with multi-objective planning, resource dependency resolution, and hint generation.\n"+
+
+"Developed a responsive HTML/CSS/JavaScript frontend with dynamic API integration, objective selection, and navigation between tools.",
+    img: mine,
+    href:"https://github.com/Ruman2304/Wampuscraft"
   },
 
 ];
