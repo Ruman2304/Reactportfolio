@@ -46,7 +46,7 @@ function ProjectCards() {
  <h1 style={{fontFamily: "'Fredoka One', sans-serif",
           textAlign: "center",
           letterSpacing: "3px"}}>
-        Projects (Under Construction Please Scroll Down)
+        Projects
       </h1>
 
     <div className="cards-container">
