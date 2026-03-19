@@ -3,17 +3,17 @@ import "./cards.css";
 import lacross from "./assets/images.jpg";
 import houe from "./assets/housde.png";
 import anim from "./assets/ani.png";
-import job from "./assets/jobportal.png";
 import mine from "./assets/mine.webp";
 import jp2 from "./assets/jp2.png";
 import jp3 from "./assets/jp3.png";
 import jp4 from "./assets/jp4.png";
 import ani2 from "./assets/ani2.png";
-import lc2 from "./assets/lacross2.png";
 import ac1 from "./assets/ac1.png";
+import lc2 from "./assets/lc2.png";
 import ac2 from "./assets/ac2.png";
 import ac3 from "./assets/ac3.png";
 import ac4 from "./assets/ac4.png";
+import jp5 from "./assets/jp5.png";
 
 const projects = [
   {
@@ -30,18 +30,18 @@ const projects = [
     title: "House Price Predictor",
     tags: ["Flask", "Python", "ML", "Kaggle", "Linear Regression"],
     desc: "A user-friendly ML tool built with Flask and Linear Regression using a Bengaluru housing dataset. Achieves 84%+ accuracy in estimating home values. Built during IBM SkillBuild's 6-week data analytics internship.",
-    images: [houe, houe, houe],
+    images: [houe],
     href: "https://www.linkedin.com/posts/ruman-saiyed-4b4646299_introducing-the-house-price-predictor-a-activity-7222435435917000705-_lmS/",
     accent: "#00c6a2",
   },
   {
     id: 3,
-    title: "Job Portal",
-    tags: ["PHP", "MySQL", "AJAX", "JS", "CSS"],
-    desc: "A comprehensive job portal that connects professionals with career opportunities. Features seamless UX powered by PHP, HTML, CSS, JavaScript, and AJAX — with PHPMyAdmin handling the backend for secure and reliable data management.",
-    images: [job, jp2, jp3, jp4],
-    href: "https://www.linkedin.com/posts/ruman-saiyed-4b4646299_excited-to-announce-the-successful-completion-activity-7193122138315243522--A9f/",
-    accent: "#ff6b35",
+    title: "Asthma Care App",
+    tags: ["React", "Golang", "fiber", "fullstack", "API"],
+    desc: "**AsthmaCare** is a full-stack web application built with **Go (Fiber)** and **PostgreSQL** that helps asthma patients manage their health by providing real-time air quality monitoring, nearby emergency room locator, and evidence-based asthma tips. The app features **JWT authentication**, **Google Maps & Air Quality APIs** for live location-based data, and a responsive frontend with an emergency SOS protocol. Designed to be a complete breathing companion, it empowers users with actionable insights to prevent attacks and respond effectively in emergencies.",
+    images: [ac1, ac2, ac3, ac4],
+    href: "https://github.com/Ruman2304/Wampuscraft",
+    accent: "#56cf75",
   },
   {
     id: 4,
@@ -61,14 +61,15 @@ const projects = [
     href: "https://github.com/Ruman2304/Wampuscraft",
     accent: "#56cf75",
   },
+  
    {
     id: 6,
-    title: "Asthma Care App",
-    tags: ["React", "Golang", "fiber", "fullstack", "API"],
-    desc: "**AsthmaCare** is a full-stack web application built with **Go (Fiber)** and **PostgreSQL** that helps asthma patients manage their health by providing real-time air quality monitoring, nearby emergency room locator, and evidence-based asthma tips. The app features **JWT authentication**, **Google Maps & Air Quality APIs** for live location-based data, and a responsive frontend with an emergency SOS protocol. Designed to be a complete breathing companion, it empowers users with actionable insights to prevent attacks and respond effectively in emergencies.",
-    images: [ac1, ac2, ac3, ac4],
-    href: "https://github.com/Ruman2304/Wampuscraft",
-    accent: "#56cf75",
+    title: "Job Portal",
+    tags: ["PHP", "MySQL", "AJAX", "JS", "CSS"],
+    desc: "A comprehensive job portal that connects professionals with career opportunities. Features seamless UX powered by PHP, HTML, CSS, JavaScript, and AJAX — with PHPMyAdmin handling the backend for secure and reliable data management.",
+    images: [jp2,jp5, jp3, jp4],
+    href: "https://www.linkedin.com/posts/ruman-saiyed-4b4646299_excited-to-announce-the-successful-completion-activity-7193122138315243522--A9f/",
+    accent: "#ff6b35",
   },
 ];
 
