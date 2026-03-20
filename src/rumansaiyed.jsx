@@ -43,81 +43,73 @@ const Ruman3D = () => {
 
   return (
     <html>
- 
-    <div
-      style={{
-        minHeight: "220vh",
-        backgroundColor: "#ffffff",
-        margin: 0,
-      }}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-    >
       <div
         style={{
-          position: "sticky",
-          top: "40vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-
-          // 3D context
-          perspective: "900px",
-          pointerEvents: "none",
+          minHeight: "220vh",
+          backgroundColor: "#ffffff",
+          margin: 0,
+          overflowX: "hidden",
         }}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
       >
         <div
           style={{
-            // STREET STYLE BOLD
-fontFamily: "'Orbitron', sans-serif",
-
-
-            fontWeight: 1000,
-            fontSize: "5rem",
-            textTransform: "uppercase",
-
-            color: "#000000",
-
-            // COMBINED TRANSFORM: scroll + mouse 3D
-            transform: `
-              translateY(${translateY}px)
-              scale(${scale})
-              rotateX(${tilt.x}deg)
-              rotateY(${tilt.y}deg)
-              translateZ(0)
-            `,
-            transformOrigin: "center center",
-
-            opacity,
-            transition:
-              "transform 0.08s ease-out, opacity 0.08s linear",
-            pointerEvents: "auto", // so it can receive mouse events if needed
+            position: "sticky",
+            top: "40vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            perspective: "900px",
+            pointerEvents: "none",
+            overflow: "hidden",
           }}
         >
-          RUMAN SAIYED<div style={{
-  textAlign: "center",
-  marginTop: "20px",
-  color: "black",
-  fontSize: "1.2rem",
-  fontWeight: "500",
-  letterSpacing: "2px",
-}}>
-  SCROLL DOWN <br />
-  <span style={{
-    fontSize: "2rem",
-    display: "inline-block",
-    marginTop: "8px",
-  }}>
-    ↓
-  </span>
-</div>
-
+          <div
+            style={{
+              fontFamily: "'Orbitron', sans-serif",
+              fontWeight: 1000,
+              fontSize: "clamp(1.8rem, 7vw, 5rem)",
+              textTransform: "uppercase",
+              color: "#000000",
+              transform: `
+                translateY(${translateY}px)
+                scale(${scale})
+                rotateX(${tilt.x}deg)
+                rotateY(${tilt.y}deg)
+                translateZ(0)
+              `,
+              transformOrigin: "center center",
+              opacity,
+              transition: "transform 0.08s ease-out, opacity 0.08s linear",
+              pointerEvents: "auto",
+            }}
+          >
+            RUMAN SAIYED
+            <div style={{
+              textAlign: "center",
+              marginTop: "20px",
+              color: "black",
+              fontSize: "1.2rem",
+              fontWeight: "500",
+              letterSpacing: "2px",
+            }}>
+              SCROLL DOWN <br />
+              <span style={{
+                fontSize: "2rem",
+                display: "inline-block",
+                marginTop: "8px",
+              }}>
+                ↓
+              </span>
+            </div>
+          </div>
         </div>
-      </div>
 
-      {/* Extra space so you can scroll */}
-      <div style={{ height: "200vh" }} />
-    </div></html>
+        {/* Extra space so you can scroll */}
+        <div style={{ height: "200vh" }} />
+      </div>
+    </html>
   );
 };
 
