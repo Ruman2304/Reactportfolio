@@ -40,7 +40,7 @@ const projects = [
     tags: ["React", "Golang", "fiber", "fullstack", "API"],
     desc: "**AsthmaCare** is a full-stack web application built with **Go (Fiber)** and **PostgreSQL** that helps asthma patients manage their health by providing real-time air quality monitoring, nearby emergency room locator, and evidence-based asthma tips. The app features **JWT authentication**, **Google Maps & Air Quality APIs** for live location-based data, and a responsive frontend with an emergency SOS protocol. Designed to be a complete breathing companion, it empowers users with actionable insights to prevent attacks and respond effectively in emergencies.",
     images: [ac1, ac2, ac3, ac4],
-    href: "https://github.com/Ruman2304/Wampuscraft",
+    href: "https://github.com/Ruman2304/Asthma-Clinic",
     accent: "#56cf75",
   },
   {

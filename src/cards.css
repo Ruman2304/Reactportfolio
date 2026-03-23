@@ -245,13 +245,84 @@
 
 /* ── Responsive ───────────────────────────────────────── */
 @media (max-width: 480px) {
-  .cards-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 0 4px;
+  /* Section */
+  .projects-section {
+    padding: 48px 12px 64px;
+  }
+
+  .section-header {
+    margin-bottom: 36px;
   }
 
   .section-title {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    letter-spacing: -1px;
+  }
+
+  .section-eyebrow {
+    font-size: 0.65rem;
+  }
+
+  /* Grid */
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0;
+  }
+
+  /* Card */
+  .card {
+    border-radius: 12px;
+  }
+
+  .card:hover {
+    transform: translateY(-4px); /* subtler lift on mobile */
+  }
+
+  /* Gallery */
+  .gallery-wrap {
+    padding: 8px 8px 0 8px;
+  }
+
+  .gallery-main {
+    aspect-ratio: 16 / 8; /* slightly shorter image on phone */
+    border-radius: 7px;
+  }
+
+  /* Thumbnails */
+  .gallery-thumbs {
+    gap: 4px;
+    padding: 6px 8px;
+  }
+
+  .thumb-btn {
+    border-radius: 4px;
+    border-width: 1.5px;
+    aspect-ratio: 16 / 7; /* compact thumbnail height */
+  }
+
+  /* Card content */
+  .card-content {
+    padding: 14px 14px 16px;
+    gap: 10px;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+  }
+
+  .tag {
+    font-size: 0.62rem;
+    padding: 2px 7px;
+  }
+
+  .card-desc {
+    font-size: 0.76rem;
+    line-height: 1.6;
+  }
+
+  .card-link {
+    font-size: 0.76rem;
+    padding: 7px 14px;
   }
 }
